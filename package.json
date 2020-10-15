@@ -38,6 +38,7 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/bulma.css css/bulma.css",
     "build-cleancss": "cleancss -o css/bulma.min.css css/bulma.css",
     "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
+    "build-scss": "rimraf dist && node-sass -r scss/ -o dist/",
     "clean": "rimraf css",
     "rtl": "npm run rtl-sass && npm run rtl-autoprefix && npm run rtl-cleancss",
     "rtl-sass": "node-sass --output-style expanded --source-map true bulma-rtl.sass css/bulma-rtl.css",
